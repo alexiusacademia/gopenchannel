@@ -8,16 +8,14 @@ const (
 	SuperCritical
 )
 
-/*
 func (ft FlowType) String() string {
 	switch ft {
 	case Critical:
-		return "critical"
+		return "Critical"
 	case SubCritical:
-		return "sub-critical"
+		return "Sub-Critical"
 	case SuperCritical:
-		return "super critical"
+		return "Super Critical"
 	}
 	return "unknown flow type"
 }
-*/
