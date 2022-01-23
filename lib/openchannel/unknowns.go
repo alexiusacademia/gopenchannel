@@ -7,7 +7,7 @@ const (
 	BedSlope
 	WaterDepth
 	ChannelWidth
-	Radius
+	Diameter
 )
 
 func (u Unknown) String() string {
@@ -20,8 +20,8 @@ func (u Unknown) String() string {
 		return "Water Depth"
 	case ChannelWidth:
 		return "Channel Width"
-	case Radius:
-		return "Radius"
+	case Diameter:
+		return "Pipe Diameter"
 	}
 
 	return "Invalid"
