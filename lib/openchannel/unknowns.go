@@ -1,28 +1,30 @@
 package openchannel
 
-type Unknown int64
+type Unknown int
 
+// Enums for unknowns.
+// U stands for unknown.
 const (
-	Discharge Unknown = iota
-	BedSlope
-	WaterDepth
-	ChannelWidth
-	Diameter
+	UDischarge Unknown = iota
+	UBedSlope
+	UWaterDepth
+	UChannelWidth
+	UPipeDiameter
 )
 
 func (u Unknown) String() string {
 	switch u {
-	case Discharge:
+	case UDischarge:
 		return "Discharge"
-	case BedSlope:
+	case UBedSlope:
 		return "Bed Slope"
-	case WaterDepth:
+	case UWaterDepth:
 		return "Water Depth"
-	case ChannelWidth:
+	case UChannelWidth:
 		return "Channel Width"
-	case Diameter:
+	case UPipeDiameter:
 		return "Pipe Diameter"
 	}
 
-	return "Invalid"
+	return "Invalid unknown"
 }
