@@ -2,20 +2,22 @@ package openchannel
 
 type FlowType int64
 
+// Enums for flow types.
+// FT stands for flow type.
 const (
-	Critical FlowType = iota
-	SubCritical
-	SuperCritical
+	FTCritical FlowType = iota
+	FTSubCritical
+	FTSuperCritical
 )
 
 func (ft FlowType) String() string {
 	switch ft {
-	case Critical:
+	case FTCritical:
 		return "Critical"
-	case SubCritical:
+	case FTSubCritical:
 		return "Sub-Critical"
-	case SuperCritical:
+	case FTSuperCritical:
 		return "Super Critical"
 	}
-	return "unknown flow type"
+	return "Unknown flow type"
 }
