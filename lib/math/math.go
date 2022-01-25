@@ -12,3 +12,6 @@ type Node struct {
 	X float64
 	Y float64
 }
+
+// Math constants
+const GRAVITY_METRIC = 9.81
